@@ -59,3 +59,14 @@ export PS1='$(__dir_prompt)%#$(__git_prompt) '
 ################################################################
 
 export EDITOR=vim
+
+################################################################
+## History
+################################################################
+
+setopt inc_append_history
+setopt share_history
+
+HISTFILE=${HOME}/.zsh_history
+HISTSIZE=99999
+SAVEHIST=99999
