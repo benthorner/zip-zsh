@@ -39,13 +39,17 @@ function __git_prompt {
   echo "%B%F{blue}${vcs_info_msg_0_}%f%b"
 }
 
+function __job_prompt {
+  echo "%B%F{magenta}%(1j. [%j].)%f%b"
+}
+
 autoload -Uz vcs_info
 precmd() { vcs_info }
 zstyle ':vcs_info:git*' formats "%b"
 
 setopt prompt_subst
 export PS2="-> "
-export PS1='$(__dir_prompt)%#$(__git_prompt) '
+export PS1='$(__dir_prompt)%#$(__git_prompt)$(__job_prompt) '
 
 ################################################################
 ## Vim
