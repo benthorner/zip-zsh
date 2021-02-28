@@ -1,10 +1,4 @@
 ################################################################
-## Ruby
-################################################################
-
-alias be='bundle exec'
-
-################################################################
 ## Git
 ################################################################
 
@@ -17,7 +11,6 @@ alias gl='git log --oneline --graph'
 alias gst='git status -sb'
 alias gp='git push'
 alias gpl='git pull'
-alias grm='git rebase master'
 alias grc='git rebase --continue'
 alias gs='git stash'
 alias gsp='git stash pop'
