@@ -14,6 +14,7 @@ alias gpl='git pull'
 alias grc='git rebase --continue'
 alias gs='git stash'
 alias gsp='git stash pop'
+alias hpr="hub pull-request"
 
 ################################################################
 ## Docker
