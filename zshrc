@@ -68,3 +68,9 @@ setopt share_history
 HISTFILE=${HOME}/.zsh_history
 HISTSIZE=99999
 SAVEHIST=99999
+
+################################################################
+## SSH
+################################################################
+
+alias ssha="ssh-add -t 1d"
