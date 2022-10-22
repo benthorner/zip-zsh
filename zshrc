@@ -63,7 +63,6 @@ export EDITOR=vim
 ## History
 ################################################################
 
-setopt inc_append_history
 setopt share_history
 
 HISTFILE=${HOME}/.zsh_history
