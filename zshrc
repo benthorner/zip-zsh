@@ -64,6 +64,7 @@ export EDITOR=vim
 ################################################################
 
 setopt share_history
+setopt hist_ignore_dups
 
 HISTFILE=${HOME}/.zsh_history
 HISTSIZE=99999
