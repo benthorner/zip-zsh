@@ -27,6 +27,8 @@ The following settings work well.
     git config --global branch.autosetuprebase always
     git config --global color.ui auto
     git config --global push.default current
+    git config --global fetch.parallel 5
+    git config --global fetch.prune true
 
 ## Config (Pre Catalina)
 
