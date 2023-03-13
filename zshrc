@@ -11,12 +11,13 @@ alias gf='git fetch'
 alias gl='git log --oneline --graph'
 alias gst='git status -sb'
 alias gp='git push'
-alias gpl='git pull'
+alias gpl='git pull origin $(git rev-parse --abbrev-ref HEAD)'
 alias grc='git rebase --continue'
 alias gs='git stash'
 alias gsp='git stash pop'
 alias grim="git rebase -i master"
-alias grm="git checkout master && git pull; git checkout - && git rebase master"
+alias gplm="git checkout master && git pull origin master && git checkout -"
+alias grm="git rebase master"
 alias hpr="hub pull-request"
 
 ################################################################
