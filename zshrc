@@ -16,7 +16,7 @@ alias grc='git rebase --continue'
 alias gs='git stash'
 alias gsp='git stash pop'
 alias grim="git rebase -i master"
-alias gplm="git checkout master && git pull origin master && git checkout -"
+alias gplm="git checkout master && (git pull origin master; git checkout -)"
 alias grm="git rebase master"
 alias hpr="hub pull-request --browse"
 
