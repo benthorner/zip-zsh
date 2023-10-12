@@ -2,6 +2,11 @@
 ## Git
 ################################################################
 
+function __git_default_branch() {
+  echo $(git rev-parse --abbrev-ref origin/HEAD | cut -d '/' -f 2) ||
+    git remote set-head origin --auto  # fix local origin HEAD pointer if not set
+}
+
 alias ga='git add'
 alias gaa='git add -A'
 alias gc='git commit'
@@ -15,9 +20,9 @@ alias gpl='git pull origin $(git rev-parse --abbrev-ref HEAD)'
 alias grc='git rebase --continue'
 alias gs='git stash'
 alias gsp='git stash pop'
-alias grim="git rebase -i master"
-alias gplm="git checkout master && (git pull origin master; git checkout -)"
-alias grm="git rebase master"
+alias grim="git rebase -i $(__git_default_branch)"
+alias gplm="git checkout $(__git_default_branch) && (git pull origin $(__git_default_branch); git checkout -)"
+alias grm="git rebase $(__git_default_branch)"
 alias hpr="hub pull-request --browse"
 
 ################################################################
