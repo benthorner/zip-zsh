@@ -21,9 +21,9 @@ alias gpl='git pull origin $(git rev-parse --abbrev-ref HEAD)'
 alias grc='git rebase --continue'
 alias gs='git stash'
 alias gsp='git stash pop'
-alias grim="git rebase -i $(__git_default_branch)"
-alias gplm="git checkout $(__git_default_branch) && (git pull origin $(__git_default_branch); git checkout -)"
-alias grm="git rebase $(__git_default_branch)"
+alias grim='git rebase -i $(__git_default_branch)'
+alias gplm='git checkout $(__git_default_branch) && (git pull origin $(__git_default_branch); git checkout -)'
+alias grm='git rebase $(__git_default_branch)'
 alias hpr="hub pull-request --browse"
 
 ################################################################
