@@ -26,6 +26,7 @@ alias gplm='git checkout $(__git_default_branch) && (git pull origin $(__git_def
 alias grm='git rebase $(__git_default_branch)'
 alias gcp='git cherry-pick'
 alias hpr="hub pull-request --browse"
+alias gasc='git add -A; git stash; git stash clear'
 
 ################################################################
 ## Docker
