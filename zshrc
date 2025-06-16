@@ -92,5 +92,5 @@ alias ssha="ssh-add -t 1d"
 ################################################################
 
 function replace {
-  rg -l $1 | xargs sed -i '' -e "s/$1/$2/g"
+  rg --fixed-strings -l $1 | xargs sed -i '' -e "s/$1/$2/g"
 }
