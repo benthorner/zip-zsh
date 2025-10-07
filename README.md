@@ -29,6 +29,7 @@ The following settings work well.
     git config --global push.default current
     git config --global fetch.parallel 5
     git config --global fetch.prune true
+    git config --global interactive.singlekey true
 
 ## Config (Pre Catalina)
 
