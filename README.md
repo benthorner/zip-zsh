@@ -30,14 +30,3 @@ The following settings work well.
     git config --global fetch.parallel 5
     git config --global fetch.prune true
     git config --global interactive.singlekey true
-
-## Config (Pre Catalina)
-
-Terminal tabs don't preserve `pwd`.
-
-https://superuser.com/questions/232835/open-a-new-tab-in-the-same-directory
-
-Add the following to `.zshrc` to fix.
-
-    # Fix tabs not preserving 'pwd'
-    chpwd () {print -Pn "\e]2; %~/ \a"}
